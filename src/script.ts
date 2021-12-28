@@ -1,0 +1,3 @@
+export const log = console.log.bind(console);
+
+log('hello world');

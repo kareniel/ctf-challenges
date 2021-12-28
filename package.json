@@ -1,0 +1,29 @@
+{
+  "name": "@kareniel/ctf-challenges",
+  "version": "0.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "check": "tsc --noEmit",
+    "check:watch": "tsc --noEmit --watch",
+    "client": "parcel -p 8080 src/index.html --https --no-cache",
+    "start": "npm run client & npm run check:watch && fg",
+    "build": "parcel build src/index.html"
+  },
+  "author": "Jonathan Dupré",
+  "license": "ISC",
+  "devDependencies": {
+    "@parcel/packager-ts": "^2.0.1",
+    "@parcel/transformer-typescript-types": "^2.0.1",
+    "@types/express": "^4.17.13",
+    "@types/node": "^16.6.0",
+    "@types/ws": "^7.4.7",
+    "parcel": "^2.0.1",
+    "posthtml-doctype": "^1.1.1",
+    "posthtml-include": "^1.7.2",
+    "typescript": "^4.5.2"
+  },
+  "dependencies": {
+    "xterm": "^4.16.0"
+  }
+}
